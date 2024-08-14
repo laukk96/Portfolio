@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import StickyTop from './Components';
 
 function App() {
   return (
     <div className="App">
+      <StickyTop>Nav bar here!</StickyTop>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
