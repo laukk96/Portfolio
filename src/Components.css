@@ -1,4 +1,4 @@
-nav.stickynav {
+.stickynav {
     background-color:azure;
     width: 100%;
     height: auto;
@@ -8,7 +8,7 @@ nav.stickynav {
     left: 0;
 }
 
-nav.stickynav > ul {
+.stickynav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -18,9 +18,16 @@ nav.stickynav > ul {
     align-items:center;
 }
 
-nav.stickynav > ul > li {
+.stickynav li {
     padding: 15px 20px;
     border-bottom: 1px solid rgb(2, 204, 255);
     display:inline-block;
     flex: 0 1 auto;
+}
+
+.homebutton {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    background-color: azure;
+    border-radius: 10px;
 }

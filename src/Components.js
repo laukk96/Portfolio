@@ -8,7 +8,7 @@ export default function StickyTop() {
                 <li>item 1</li>
                 <li>item 2</li>
                 <li>
-                    <button>button text</button>
+                    <button className="homebutton">button text</button>
                 </li>
             </ul>
         </nav>
