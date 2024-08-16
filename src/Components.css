@@ -34,21 +34,31 @@
     flex: 0 1 auto;
 }
 
+
+@keyframes bouncy-diagonal-tween {
+    0%, 100% {
+        transform: translate(0, 0) scale(1.1);
+    }
+    25% {
+        transform: translate(5px, 5px) scale(1.1);
+    }
+    75% {
+        transform: translate(-5px, -5px) scale(1.1);
+    }
+}
+
+
 .homebutton {
     background-color: azure;
+    box-sizing: border-box;
     color: rgb(10, 10, 10);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transform: scale(1);
     transform-origin: center;
     transition: 
         all var(--transition-duration) ease-in;
-        /* background-color var(--transition-duration) ease-in, 
-        box-shadow var(--transition-duration) ease-in, 
-        transform var(--transition-duration) ease-in,
-        color var(--transition-duration) ease-in,
-        font-size var(--transition-duration) ease-in; */
 }
 
 .homebutton:hover {
@@ -59,8 +69,12 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition:
         all var(--transition-duration) ease-in;
+    
+    animation: bouncy-diagonal-tween 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .homebutton:focus {
     user-select: auto;
 }
+
+
