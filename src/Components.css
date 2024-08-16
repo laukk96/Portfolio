@@ -1,4 +1,11 @@
+/* Custom CSS Variables "Custom Properties" */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+:root {
+    --transition-duration: 0.2s;
+}
+
 .stickynav {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:azure;
     width: 100%;
     height: auto;
@@ -26,15 +33,31 @@
 }
 
 .homebutton {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
     background-color: azure;
-    border-radius: 10px;
+    color: rgb(10, 10, 10);
+    border-radius: 15px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1.2);
+    transform-origin: center;
+    transition: 
+        all var(--transition-duration) ease-in;
+        /* background-color var(--transition-duration) ease-in, 
+        box-shadow var(--transition-duration) ease-in, 
+        transform var(--transition-duration) ease-in,
+        color var(--transition-duration) ease-in,
+        font-size var(--transition-duration) ease-in; */
 }
 
-.homebutton:after {
-    background-color:#1CB0F6;
+.homebutton:hover {
+    transform: scale(1.3); /* Show the effect on hover */
+    transform-origin: center;
+    color: rgb(48, 48, 48);
+    background-color:rgb(125, 214, 255);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition:
+        all var(--transition-duration) ease-in;
 }
 
 .homebutton:focus {
