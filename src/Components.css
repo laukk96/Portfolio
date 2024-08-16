@@ -5,7 +5,9 @@
 }
 
 .stickynav {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+    font-weight: 100;
     background-color:azure;
     width: 100%;
     height: auto;
@@ -19,27 +21,26 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* display: flex; */
-    flex-direction:row !important;
-    justify-content: space-between !important;
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
     align-items:center;
+    
+    border-bottom: 2px solid rgb(2, 204, 255);
 }
 
 .stickynav li {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgb(2, 204, 255);
-    display:inline-block;
+    padding: 20px;
     flex: 0 1 auto;
 }
 
 .homebutton {
-    font-size: 100%;
     background-color: azure;
     color: rgb(10, 10, 10);
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transform: scale(1.2);
+    transform: scale(1);
     transform-origin: center;
     transition: 
         all var(--transition-duration) ease-in;
@@ -51,7 +52,7 @@
 }
 
 .homebutton:hover {
-    transform: scale(1.3); /* Show the effect on hover */
+    transform: scale(1.1); /* Show the effect on hover */
     transform-origin: center;
     color: rgb(48, 48, 48);
     background-color:rgb(125, 214, 255);
