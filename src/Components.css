@@ -68,7 +68,7 @@
     background-color:rgb(125, 214, 245);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition:
-        all var(--transition-duration) ease-in;
+        all var(--transition-duration) ease-out;
     
     animation: bouncy-diagonal-tween 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
